@@ -1,5 +1,3 @@
-// GET route to the suvey to display the survey
+// Dependencies 
+let path = require("path");
 
-// A default catch all route that leads to home.html
-
-// 
