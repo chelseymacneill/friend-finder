@@ -65,12 +65,12 @@ module.exports = function(app) {
             let finalMatch = friendsAPI[matchIndex +1];
             
             console.log(finalMatch)
+        
             
             // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
             res.json(finalMatch);
-            
-        }
-        
+            // 
+        }   
     });
 };
 
