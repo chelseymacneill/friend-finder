@@ -38,10 +38,10 @@ module.exports = function(app) {
         let comparisonArray = [];
         
         for (var j = 1; j < friendsAPI.length; j ++) {
-
+            
             // Empty out y to start from zero
             y = 0 
-
+            
             for (var i = 0; i < 4; i ++) { // 4 will turn to ten 
                 let x = Math.abs(friendsAPI[0].scores[i] - friendsAPI[j].scores[i])
                 y += x
@@ -60,15 +60,17 @@ module.exports = function(app) {
             let matchIndex = comparisonArray.indexOf(minComparison)
             
             console.log(matchIndex)
-
+            
             // final match 
             let finalMatch = friendsAPI[matchIndex +1];
-
+            
             console.log(finalMatch)
-
+            
+            // Return a JSON with the user's bestMatch. This will be used by the HTML in the next page
+            res.json(finalMatch);
             
         }
-     
+        
     });
 };
 
