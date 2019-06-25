@@ -21,16 +21,16 @@ let friendsArray = [
         "name": "Conan O'Brien",
         "photo": "https://irp-cdn.multiscreensite.com/ce0ec9f3/dms3rep/multi/mobile/CONAN+O-BRIEN.jpg",
         "scores": [
+            4,
+            5,
+            1,
             5,
             5,
+            3,
             5,
+            2,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            1
         ]
     },
 
